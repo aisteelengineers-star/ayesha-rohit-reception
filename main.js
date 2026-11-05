@@ -118,7 +118,6 @@
       section.innerHTML = `
         <div class="chapter-watermark" aria-hidden="true">${chapter.index}</div>
         <div class="chapter-heading" data-animate="soft">
-          <p class="eyebrow">Chapter ${chapter.index}</p>
           <h2>${chapter.chapter}</h2>
           <time>${chapter.date}</time>
           <span class="ornament" aria-hidden="true">
