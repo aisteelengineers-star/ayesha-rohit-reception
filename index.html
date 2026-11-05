@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#170b10" />
+  <meta name="description"
+    content="Wedding celebration of Rohit Mehta and Ayesha Langar — 21 &amp; 23 November 2026. Warmly invited by the Mehta &amp; Langar families." />
+  <meta name="author" content="Mehta &amp; Langar Families" />
+  <link rel="canonical" href="https://view.ourweddingcard.com/rohit-ayesha-wedding" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="Our Wedding Card" />
+  <meta property="og:title" content="Rohit &amp; Ayesha | The Wedding Celebration" />
+  <meta property="og:description"
+    content="Lalita &amp; B.K. Mehta and Jayanti &amp; Rajiv Langar invite you to celebrate the wedding of Rohit &amp; Ayesha." />
+  <meta property="og:url" content="https://view.ourweddingcard.com/rohit-ayesha-wedding" />
+  <meta property="og:image" content="assets/social-preview-rohit-ayesha.jpg" />
+  <meta property="og:image:secure_url" content="assets/social-preview-rohit-ayesha.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Rohit Mehta and Ayesha Langar Wedding invitation" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rohit &amp; Ayesha | The Wedding Celebration" />
+  <meta name="twitter:description"
+    content="Lalita &amp; B.K. Mehta and Jayanti &amp; Rajiv Langar invite you to celebrate the wedding of Rohit &amp; Ayesha." />
+  <meta name="twitter:image" content="assets/social-preview-rohit-ayesha.jpg" />
+  <title>Rohit &amp; Ayesha | The Wedding Celebration</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Italiana&family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Background Audio -->
+  <audio id="weddingAudio" src="assets/wedding-song.mp3" preload="metadata" loop></audio>
+
+  <!-- Global Progress Bar & Sparkle -->
+  <div id="globalProgressBar" class="global-progress-bar" style="transform: scaleX(0);" aria-hidden="true">
+    <div class="global-progress-shimmer"></div>
+  </div>
+  <div id="globalProgressSparkle" class="global-progress-sparkle" style="left: 0%;" aria-hidden="true">
+    <div class="global-progress-core"></div>
+    <div class="global-progress-ray" style="width: 10px; transform: rotate(0deg);"></div>
+    <div class="global-progress-ray" style="width: 10px; transform: rotate(45deg);"></div>
+    <div class="global-progress-ray" style="width: 10px; transform: rotate(90deg);"></div>
+    <div class="global-progress-ray" style="width: 10px; transform: rotate(135deg);"></div>
+  </div>
+
+  <!-- Global Floating Music Control -->
+  <button type="button" id="musicControl" class="music-control" aria-label="Play background music" aria-pressed="false"
+    title="Play background music" style="display: none;">
+    <span class="music-control-bars" aria-hidden="true">
+      <i></i><i></i><i></i><i></i>
+    </span>
+  </button>
+
+  <!-- Global Scroll Hint -->
+  <div id="globalScrollHint" class="global-scroll-hint" style="opacity: 0; pointer-events: none;">
+    <button type="button" id="scrollHintBtn" class="global-scroll-hint-content"
+      aria-label="Continue down the invitation">
+      <span>Scroll Down</span>
+      <div class="global-scroll-chevrons" aria-hidden="true">
+        <svg width="16" height="9" viewBox="0 0 12 7" fill="none">
+          <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <svg width="16" height="9" viewBox="0 0 12 7" fill="none">
+          <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <svg width="16" height="9" viewBox="0 0 12 7" fill="none">
+          <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </button>
+  </div>
+
+  <!-- Opening Gate / Cover -->
+  <div id="invitationGate" class="invitation-gate is-idle">
+    <div class="gate-stage">
+      <img class="gate-art" src="assets/royal-book-poster.jpg" alt="" fetchpriority="high" aria-hidden="true" />
+      <div class="gate-art-shade"></div>
+      <div class="gate-content">
+        <p class="gate-kicker">The Wedding Reception</p>
+        <span class="monogram" aria-label="Rohit and Ayesha">
+          <img src="assets/wedding-logo.png" alt="Rohit &amp; Ayesha" aria-hidden="true" />
+        </span>
+        <p class="gate-date">23 · 11 · 2026</p>
+        <button type="button" id="openInvitationBtn">
+          <span>Open the invitation</span>
+          <i aria-hidden="true">✦</i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main id="mainApp">
+    <!-- Hero Section -->
+    <header class="hero" style="--hero-image: url('assets/royal-crimson-hero.jpg');">
+      <div class="hero-backdrop"></div>
+      <div class="hero-vignette"></div>
+      <div class="hero-atmosphere" aria-hidden="true">
+        <i></i>
+        <i></i>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">The Wedding Celebration</p>
+        <h1><span>Rohit</span> <i style="    position: relative;
+    top: 12px;">&amp;</i> <span>Ayesha</span></h1>
+        <div>
+          <span class="ornament" aria-hidden="true">
+          <i ></i><b>◆</b><i></i>
+          </span>
+        </div>
+        <p class="hero-date" style="position: relative;left: 20px;">
+          <span>Monday</span>
+          <strong style="white-space: nowrap;">23</strong>
+          <span>November · 2026</span>
+        </p>
+        <div>
+          <span class="ornament" aria-hidden="true">
+            <i></i><b>◆</b><i></i>
+          </span>
+        </div>
+        <!-- <p class="hero-time">Reception · 7:00 PM onwards</p> -->
+      </div>
+    </header>
+
+    <!-- Invitation Section -->
+    <section id="invitation" class="invitation-section light-section">
+      <div class="invitation-copy" data-animate="soft">
+        <p class="eyebrow">The Auspicious Union</p>
+        <h2>Two Souls, One Heart,<br />A Lifetime of Love</h2>
+        <span class="ornament" aria-hidden="true">
+          <i></i><b>◆</b><i></i>
+        </span>
+      </div>
+
+      <div class="families" data-animate="soft">
+        <article>
+          <span>The Groom</span>
+          <h3>Rohit</h3>
+          <p>S/o Lalita &amp; B.K. Mehta</p>
+          <small>Mehta Family</small>
+        </article>
+
+        <span class="monogram monogram--compact" aria-label="Rohit and Ayesha">
+          <img src="assets/wedding-logo.png" alt="Rohit &amp; Ayesha" aria-hidden="true" />
+        </span>
+
+        <article>
+          <span>The Bride</span>
+          <h3>Ayesha</h3>
+          <p>D/o Jayanti &amp; Rajiv Langar</p>
+          <small>Langar Family</small>
+        </article>
+      </div>
+
+      <!-- Dedicated Host & Family Honours Section -->
+      <!-- <div class="jubilee-honours" data-animate="soft">
+          <div class="honour-card honour-card--invite">
+            <span class="honour-label">Groom’s Parents</span>
+            <p class="honour-role">With Blessings &amp; Love</p>
+            <h3 class="honour-names">Lalita &amp; B.K. Mehta</h3>
+          </div>
+
+          <div class="honour-divider" aria-hidden="true">
+            <i></i><b>✦</b><i></i>
+          </div>
+
+          <div class="honour-card honour-card--waiting">
+            <span class="honour-label">Bride’s Parents</span>
+            <p class="honour-role">With Blessings &amp; Love</p>
+            <h3 class="honour-names">Jayanti &amp; Rajiv Langar</h3>
+          </div>
+
+          <div class="honour-divider" aria-hidden="true">
+            <i></i><b>✦</b><i></i>
+          </div> -->
+
+      <div class="honour-card honour-card--grandchildren">
+        <span class="honour-label">With Warm Compliments</span>
+        <div class="grandchildren-grid">
+          <span class="grandchild-item">The Mehta Family</span>
+          <!-- <span class="grandchild-dot" aria-hidden="true">◆</span> -->
+          <!-- <span class="grandchild-item">The Langar Family</span> -->
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section" style="--countdown-image: url('assets/crimson-mirror-ceiling.jpeg');">
+      <div class="countdown-shine"></div>
+      <div data-animate="soft">
+        <p class="eyebrow">Until the celebrations begin</p>
+        <h2>Save the Date</h2>
+        <div class="countdown" id="countdownGrid" aria-label="Countdown to the Wedding">
+          <div>
+            <strong id="cdDays">00</strong>
+            <span>days</span>
+          </div>
+          <div>
+            <strong id="cdHours">00</strong>
+            <span>hours</span>
+          </div>
+          <div>
+            <strong id="cdMinutes">00</strong>
+            <span>minutes</span>
+          </div>
+          <div>
+            <strong id="cdSeconds">00</strong>
+            <span>seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story Break Section -->
+    <section class="story-break" style="--story-image: url('assets/candle-floral-detail.jpeg');">
+      <div class="story-break-image"></div>
+      <div class="story-break-copy">
+        <div data-animate="soft">
+          <span style="white-space: nowrap;">Into the Metaverse</span>
+          <h2>Two hearts.<br />A sacred celebration.</h2>
+          <p>Monday · 23 November · 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Chapters Container (Populated via JS) -->
+    <div class="events-wrap" id="eventsWrap"></div>
+
+    <!-- Blessing Section -->
+    <section class="blessing light-section">
+      <div data-animate="soft">
+        <span class="monogram" aria-label="Rohit and Ayesha">
+          <img src="assets/wedding-logo.png" alt="Rohit &amp; Ayesha" aria-hidden="true" />
+        </span>
+        <blockquote>“Two lives, two souls, united in love and friendship forever. As we embark on this sacred journey of
+          marriage, we seek your love, blessings, and warm presence.”</blockquote>
+        <cite>Wedding Celebration · Rohit &amp; Ayesha</cite>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-lights" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="footer-content" data-animate="soft">
+        <div class="wishes">
+          <span>Warmly invited by</span>
+          <span class="wishes-rule" aria-hidden="true"></span>
+          <strong>Mehta Families</strong>
+        </div>
+      </div>
+      <div class="footer-credit">
+        <span>Event Planner</span>
+        <div class="footer-partners">
+          <a class="association-partner" href="https://www.instagram.com/tarangi.events/" target="_blank"
+            rel="noreferrer" aria-label="Tarangi Events on Instagram">
+            <img class="association-logo" src="tarangi-logo.png" alt="Tarangi Events" />
+            <span class="association-name">Tarangi Events</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Share / Guest Link Creator (Activated if URL has ?share or /share) -->
+  <div id="sharePage" class="share-page" style="--share-backdrop: url('assets/royal-crimson-hero.jpg'); display: none;">
+    <div class="share-page-backdrop" aria-hidden="true"></div>
+    <div class="share-page-glow" aria-hidden="true"></div>
+    <section class="share-panel">
+      <div class="share-monogram" aria-hidden="true">
+        <img src="assets/wedding-logo.png" alt="Rohit &amp; Ayesha" />
+      </div>
+      <p class="share-eyebrow">Rohit &amp; Ayesha · November 2026</p>
+      <h1>Create a guest link</h1>
+      <p class="share-intro">Select the wedding celebrations to share with your guest.</p>
+
+      <div class="share-options share-options--picker" id="sharePickerList"></div>
+
+      <div class="share-builder">
+        <div class="share-builder-summary">
+          <span id="shareCountText">2 events selected</span>
+          <strong id="shareSummaryText">The Wedding &amp; Reception</strong>
+        </div>
+        <code id="shareGeneratedLink">Your custom invitation link will appear here</code>
+        <div class="share-builder-actions">
+          <button type="button" id="copyShareLinkBtn">Copy custom link</button>
+          <a id="previewShareLinkBtn" href="#" target="_blank" rel="noreferrer">
+            Preview invitation <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+      <p class="share-note">The wedding invitation will appear when the guest opens this link.</p>
+    </section>
+  </div>
+
+  <!-- Application Script -->
+  <script src="main.js"></script>
+</body>
+
+</html>

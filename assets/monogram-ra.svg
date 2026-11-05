@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d08e" />
+      <stop offset="30%" stop-color="#c59f51" />
+      <stop offset="55%" stop-color="#edd89f" />
+      <stop offset="78%" stop-color="#9a6e27" />
+      <stop offset="100%" stop-color="#d6b567" />
+    </linearGradient>
+    <linearGradient id="goldGradSoft" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdf4d8" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa7a22" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#3a0d16" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <g filter="url(#softGlow)">
+    <!-- Outer Fine Wreath Ring -->
+    <circle cx="250" cy="250" r="226" fill="none" stroke="url(#goldGrad)" stroke-width="1.4" opacity="0.85" />
+    <circle cx="250" cy="250" r="236" fill="none" stroke="url(#goldGrad)" stroke-width="0.75" stroke-dasharray="3 6" opacity="0.6" />
+
+    <!-- Top Crest Crown Motif -->
+    <g transform="translate(250, 48) scale(0.85)" stroke="url(#goldGrad)" fill="none" stroke-width="1.5">
+      <path d="M 0 -18 L 4 -7 L 15 -7 L 6 0 L 10 11 L 0 4 L -10 11 L -6 0 L -15 -7 L -4 -7 Z" fill="url(#goldGrad)" />
+      <path d="M -30 18 C -15 8, 15 8, 30 18" />
+      <circle cx="0" cy="-24" r="2.5" fill="url(#goldGradSoft)" stroke="none" />
+      <circle cx="-18" cy="-12" r="1.8" fill="url(#goldGradSoft)" stroke="none" />
+      <circle cx="18" cy="-12" r="1.8" fill="url(#goldGradSoft)" stroke="none" />
+    </g>
+
+    <!-- Botanical Foliage / Laurel Branches (Left & Right) -->
+    <!-- Left Branch -->
+    <path d="M 120 100 C 60 170, 52 320, 130 400" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Left Leaves -->
+    <g fill="url(#goldGrad)" opacity="0.9">
+      <path d="M 112 110 C 95 104, 88 120, 108 124 C 114 118, 116 112, 112 110 Z" />
+      <path d="M 92 142 C 72 140, 68 158, 88 160 C 94 152, 95 145, 92 142 Z" />
+      <path d="M 76 182 C 55 185, 54 204, 73 203 C 78 194, 79 187, 76 182 Z" />
+      <path d="M 68 230 C 46 237, 48 256, 68 252 C 72 243, 72 235, 68 230 Z" />
+      <path d="M 70 280 C 50 292, 56 310, 74 302 C 77 292, 75 284, 70 280 Z" />
+      <path d="M 85 328 C 68 344, 78 360, 94 348 C 95 338, 91 331, 85 328 Z" />
+      <path d="M 110 370 C 96 388, 110 402, 124 387 C 123 377, 118 371, 110 370 Z" />
+    </g>
+
+    <!-- Right Branch -->
+    <path d="M 380 100 C 440 170, 448 320, 370 400" fill="none" stroke="url(#goldGrad)" stroke-width="1.8" stroke-linecap="round" />
+    <!-- Right Leaves -->
+    <g fill="url(#goldGrad)" opacity="0.9">
+      <path d="M 388 110 C 405 104, 412 120, 392 124 C 386 118, 384 112, 388 110 Z" />
+      <path d="M 408 142 C 428 140, 432 158, 412 160 C 406 152, 405 145, 408 142 Z" />
+      <path d="M 424 182 C 445 185, 446 204, 427 203 C 422 194, 421 187, 424 182 Z" />
+      <path d="M 432 230 C 454 237, 452 256, 432 252 C 428 243, 428 235, 432 230 Z" />
+      <path d="M 430 280 C 450 292, 444 310, 426 302 C 423 292, 425 284, 430 280 Z" />
+      <path d="M 415 328 C 432 344, 422 360, 406 348 C 405 338, 409 331, 415 328 Z" />
+      <path d="M 390 370 C 404 388, 390 402, 376 387 C 377 377, 382 371, 390 370 Z" />
+    </g>
+
+    <!-- Bottom Ribbon Flourish -->
+    <g transform="translate(250, 420)" stroke="url(#goldGrad)" fill="none" stroke-width="1.2">
+      <path d="M -60 -10 Q 0 16, 60 -10 Q 30 8, 0 10 Q -30 8, -60 -10 Z" fill="url(#goldGrad)" opacity="0.4" />
+      <circle cx="0" cy="18" r="3" fill="url(#goldGradSoft)" stroke="none" />
+      <circle cx="-16" cy="15" r="1.8" fill="url(#goldGradSoft)" stroke="none" />
+      <circle cx="16" cy="15" r="1.8" fill="url(#goldGradSoft)" stroke="none" />
+    </g>
+
+    <!-- Center Intertwined Monogram Initials R & A -->
+    <g id="letters" font-family="'Playfair Display', 'Cormorant Garamond', Georgia, serif">
+      <!-- Letter R -->
+      <text x="180" y="275" font-size="160" font-weight="600" font-style="italic" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="-4">R</text>
+      
+      <!-- Ampersand / Diamond Connector -->
+      <g transform="translate(250, 246)">
+        <circle cx="0" cy="0" r="16" fill="#1b080f" stroke="url(#goldGrad)" stroke-width="1.2" opacity="0.9" />
+        <text x="0" y="6" font-size="20" font-style="normal" font-weight="400" fill="url(#goldGradSoft)" text-anchor="middle">✦</text>
+      </g>
+
+      <!-- Letter A -->
+      <text x="320" y="275" font-size="160" font-weight="600" font-style="italic" fill="url(#goldGradSoft)" text-anchor="middle" letter-spacing="-4">A</text>
+    </g>
+
+    <!-- Center Couple Names Underline -->
+    <g transform="translate(250, 325)">
+      <line x1="-90" y1="0" x2="-25" y2="0" stroke="url(#goldGrad)" stroke-width="1" opacity="0.7" />
+      <circle cx="0" cy="0" r="2.5" fill="url(#goldGradSoft)" />
+      <line x1="25" y1="0" x2="90" y2="0" stroke="url(#goldGrad)" stroke-width="1" opacity="0.7" />
+      
+      <text x="0" y="22" font-family="'Manrope', 'Montserrat', sans-serif" font-size="13" font-weight="600" letter-spacing="7" fill="url(#goldGrad)" text-anchor="middle">ROHIT &amp; AYESHA</text>
+      <text x="0" y="38" font-family="'Cormorant Garamond', Georgia, serif" font-size="14" font-style="italic" letter-spacing="3" fill="url(#goldGradSoft)" opacity="0.9" text-anchor="middle">21 · 11 · 2026</text>
+    </g>
+  </g>
+</svg>
