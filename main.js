@@ -17,7 +17,7 @@
       date: 'Monday, 23 November 2026',
       items: [
         {
-          time: '7:00 PM onwards',
+          time: '7:30 PM onwards',
           subtime: 'Followed by<br>Cocktails &amp; Dinner',
           hall: 'Margosa Lawn,',
           venue: 'India Habitat Centre, New Delhi',
